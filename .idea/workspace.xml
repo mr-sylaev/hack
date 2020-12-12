@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a489d4c-5f35-4fa6-a05c-5089da037a9c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k4MDGDmgIfRmbdTyLGR2GrMGzb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gorgona\Desktop\hack\img" />
+      <recent name="D:\projects\WEB\allrenter\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gorgona\Desktop\hack" />
+      <recent name="C:\Users\Gorgona\Desktop\hack\img" />
+      <recent name="C:\Users\Gorgona\Desktop\hack\fonts\Golos" />
+      <recent name="D:\projects\WEB\allrenter\img\icons" />
+      <recent name="D:\projects\WEB\allrenter\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a489d4c-5f35-4fa6-a05c-5089da037a9c" name="Default Changelist" comment="" />
+      <created>1604955288845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604955288845</updated>
+      <workItem from="1604955289893" duration="78000" />
+      <workItem from="1605084126488" duration="595000" />
+      <workItem from="1605086697188" duration="17028000" />
+      <workItem from="1605287560890" duration="14246000" />
+      <workItem from="1605382511188" duration="23243000" />
+      <workItem from="1605699881633" duration="1238000" />
+      <workItem from="1605873597811" duration="14899000" />
+      <workItem from="1606058072981" duration="19051000" />
+      <workItem from="1606299577685" duration="7372000" />
+      <workItem from="1606379711850" duration="2981000" />
+      <workItem from="1606471895534" duration="2054000" />
+      <workItem from="1606478879622" duration="45000" />
+      <workItem from="1606479782997" duration="649000" />
+      <workItem from="1606481027845" duration="11398000" />
+      <workItem from="1606510090722" duration="4361000" />
+      <workItem from="1606726080339" duration="8416000" />
+      <workItem from="1606771592281" duration="5911000" />
+      <workItem from="1606808145841" duration="3528000" />
+      <workItem from="1607027206795" duration="673000" />
+      <workItem from="1607121445835" duration="505000" />
+      <workItem from="1607200171408" duration="2062000" />
+      <workItem from="1607204720878" duration="9645000" />
+      <workItem from="1607253109770" duration="1799000" />
+      <workItem from="1607269942149" duration="11563000" />
+      <workItem from="1607344738109" duration="6366000" />
+      <workItem from="1607673375532" duration="95000" />
+      <workItem from="1607783424538" duration="4631000" />
+      <workItem from="1607789573223" duration="2003000" />
+      <workItem from="1607793577964" duration="30000" />
+      <workItem from="1607793850380" duration="12138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="213" key="#Deployment" timestamp="1605511436628">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="213" key="#Deployment/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1605511436628" />
+    <state x="761" y="62" key="#HTML" timestamp="1605087107907">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="761" y="62" key="#HTML/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1605087107907" />
+    <state x="730" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605503617476">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="730" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1605503617476" />
+    <state x="690" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607786322334">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="690" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1606121811543" />
+    <state x="690" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1607786322334" />
+    <state x="740" y="296" key="FileChooserDialogImpl" timestamp="1607808624267">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="740" y="296" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1607808624267" />
+    <state x="816" y="454" key="WebDeployment.AddServerDialog.v.1" timestamp="1605510886826">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="816" y="454" key="WebDeployment.AddServerDialog.v.1/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1605510886826" />
+    <state x="616" y="258" key="run.anything.popup" timestamp="1606811260931">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1606811260931" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1607786837359">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1605488439893" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1607786837359" />
+  </component>
+</project>

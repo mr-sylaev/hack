@@ -1,0 +1,733 @@
+//$bg: #F4F4F4
+//$mark-green: #84b413
+//$primary: #4772B2
+//$primary-light: #5AB0FF
+//$primary-light-2: #AAA7EA
+//$primary-extralight: #EBEAFA
+//$secondary: #FF825A
+//$mark-red: #FF5A5A
+//$baseFont: #3A3A3A
+//$neutral-1: #5B5B5B
+//$neutral-2: #858585
+//$neutral-3: #CACACA
+//$neutral-4: #E0E0E0
+//$gray-7: #8C8C8C
+//$gray-8: #595959
+//$gray-9: #262626
+//
+//$purpleGradient: linear-gradient(180deg, #948BE9 0%, #7066DA 100%)
+//$purpleGradientHover: linear-gradient(180deg, #ACA5EE 0%, #8880E0 100%)
+//$orangeGradient: linear-gradient(180deg, #FF9C7D 0%, #FF825A 100%)
+//
+//$widthContainer: 1128px
+
+
+@import "colors.sass"
+
+@charset "UTF-8"
+
+/* Custom ScrollBar for Webkit*/
+/* Толщина Полосы прокрутки */
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+  background-color: transparent
+/* Фон полосы прокрутки */
+::-webkit-scrollbar-track
+  background-color: #CECDE2
+  height: auto
+  width: 8px
+  border-radius: 10px
+/* Активный Кусок Прокрутки */
+::-webkit-scrollbar-thumb
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  background-color: #598EDE
+::-webkit-scrollbar-thumb:hover
+  background-color: $primary
+/* Отступы по краям полосы прокрутки */
+::-webkit-scrollbar-button
+  background-repeat: no-repeat
+  width: 8px
+  height: 0
+  border-radius: 50%
+  background-color: transparent
+::-webkit-resizer
+  background-size: 10px
+  background-position: top left
+  background-repeat: no-repeat
+  background-image: url("../img/icons/resizer.svg")
+  width: 8px
+  height: 8px
+
+
+
+
+*
+  outline: none
+
+body
+  height: auto
+  margin: 0
+  padding: 0
+  line-height: 24px
+  font-size: 16px
+  font-family: "Open Sans", sans-serif
+  background-color: $bg
+
+
+h1
+  font-size: 28px
+  font-weight: 600
+  font-family: "Manrope", sans-serif
+
+
+h2
+  font-size: 24px
+  font-weight: 600
+  line-height: 36px
+  font-family: "Manrope", sans-serif
+
+.wrapper
+  min-height: 100vh
+  height: 100%
+  display: flex
+  flex-direction: column
+  & section,
+  & main,
+  & header,
+  & footer
+    & .container
+      margin: 0 auto
+  & main
+    padding: 48px 0 72px
+    flex-grow: 1
+    & section + section
+      margin-top: 72px
+    & section
+      border-radius: 12px
+    & h1.name-site
+      margin: 0 0 24px
+      color: $neutral-1
+      font-size: 16px
+      font-weight: 600
+      text-transform: uppercase
+
+.container
+  max-width: $widthContainer
+  width: 100%
+
+header
+  background-color: #ffffff
+  & .header-top
+    padding: 12px 0
+    border-bottom: 1px solid $neutral-4
+    & .container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      & .top-menu
+        & .menu__item + .menu__item
+          margin-left: 40px
+        & .menu__item
+          & a
+            color: $neutral-2
+            transition: color 150ms ease-in-out
+            &:hover
+              color: $primary-light
+      & .info-block
+        display: flex
+        align-items: center
+        & .btn-outline
+          padding: 2px 20px
+        & .soc-links
+          margin-left: 60px
+  & .header-main
+  & .header-main__center
+    & .container
+      padding: 24px 0
+      display: flex
+      align-items: center
+      & .logo
+        line-height: 0
+        text-decoration: none
+        & img
+          width: 148px
+          height: 48px
+      & .search-block
+        margin: 0 38px 0 36px
+        width: 100%
+        position: relative
+        z-index: 2
+      & .search
+        width: 100%
+        position: relative
+        display: flex
+        & .search-input
+          padding: 0 52px 0 16px
+          width: 100%
+          height: 48px
+          box-sizing: border-box
+        & .search-btn
+          width: 56px
+          height: 100%
+          position: absolute
+          top: 0
+          right: 0
+          border: 0
+          border-radius: 12px
+          background-color: transparent
+          background-size: 24px
+          background-position: center
+          background-repeat: no-repeat
+          background-image: url("../img/icons/search.svg")
+          cursor: pointer
+          outline: none
+      & .search--results
+        margin-top: 12px
+        width: 100%
+        display: none
+        position: absolute
+        border-radius: 4px
+        background-color: #ffffff
+        box-shadow: 0px 4px 8px rgba(58, 58, 58, 0.25)
+        overflow: hidden
+        & ul
+          margin: 0
+          padding: 0
+          list-style: none
+          & li
+            & a
+              padding: 6px 12px
+              color: $neutral-1
+              display: block
+              font-size: 16px
+              line-height: 24px
+              text-decoration: none
+              &:hover
+                color: #ffffff
+                background-color: $primary-light
+      & .header-links-block
+        display: flex
+        & .link + .link
+          margin-left: 24px
+        & .link
+          //height: 42px
+          //width: 72px
+          position: relative
+          color: $neutral-1
+          font-size: 12px
+          line-height: 18px
+          display: flex
+          //flex-direction: column
+          align-items: center
+          text-decoration: none
+          transition: color 150ms ease-in-out
+          &:before
+            content: ""
+            margin-right: 6px
+            width: 24px
+            height: 24px
+            display: inline-block
+            mask-size: 100%
+            mask-position: center
+            mask-repeat: no-repeat
+            background-color: $neutral-1
+            transition: background-color 150ms ease-in-out
+          &:hover
+            &:before
+              background-color: $primary
+          &.login
+            &:before
+              mask-image: url("../img/icons/user.svg")
+          &.compare
+            &:before
+              mask-image: url("../img/icons/compare.svg")
+          &.favorite
+            &:before
+              mask-image: url("../img/icons/heart.svg")
+          &.cart
+            &:before
+              mask-image: url("../img/icons/cart.svg")
+          &:hover
+            color: $primary
+            & svg path
+              fill: $primary
+          & .count
+            padding: 0 2px
+            min-width: 12px
+            height: 16px
+            position: absolute
+            top: -8px
+            left: 14px
+            color: #ffffff
+            font-size: 10px
+            line-height: 16px
+            text-align: center
+            border-radius: 50%
+            background-color: #5AB0FF
+  & nav
+    background-color: #4772B2
+    & .main-menu
+      display: flex
+      flex-wrap: wrap
+      & .menu__item
+        transition: background-color 150ms ease-in-out
+        &:hover
+          background-color: #5588D3
+        & a
+          padding: 12px 16px
+          color: #ffffff
+          font-size: 18px
+          display: inline-block
+
+
+// Main Slider
+.main-slider
+  padding-bottom: 16px !important
+  border-radius: 12px
+  outline: none
+  .swiper-wrapper
+    border-radius: 12px
+  & .slider__item
+    padding: 36px 36px 20px
+    min-height: 408px
+    color: $neutral-2
+    border-radius: 12px
+    box-sizing: border-box
+    background-color: #ffffff
+    & .content
+      display: flex
+      justify-content: space-between
+    & .info-block
+      width: 50%
+    & img
+      align-self: center
+      max-width: 300px
+      width: 100%
+      max-height: 300px
+      height: 100%
+      object-fit: contain
+    & p
+      margin: 0
+    & .title
+      color: $baseFont
+      font-size: 24px
+      font-weight: 600
+      line-height: 36px
+    & .description
+      margin: 24px 0
+      font-family: "Golos Text", sans-serif
+    & .price
+      display: flex
+      align-items: center
+      & span
+        margin-right: 6px
+        color: $primary
+        font-size: 36px
+        font-weight: 600
+        font-family: "Manrope", sans-serif
+        line-height: 48px
+    & .btn
+      padding: 12px 36px
+      margin-top: 24px
+
+
+.product-slider
+  padding: 2px 36px 8px !important
+  margin: 0 -36px !important
+  .content
+    border-radius: 12px
+    transition: all 150ms ease-in-out
+    outline: none
+    cursor: pointer
+    box-sizing: border-box
+    &:hover
+      box-shadow: 0 4px 8px rgba(58, 58, 58, 0.25)
+.product
+  padding: 12px
+  position: relative
+  display: inline-block
+  border-radius: 12px
+  transition: all 150ms ease-in-out
+  outline: none
+  cursor: pointer
+  box-sizing: border-box
+  &:hover
+    box-shadow: 0 4px 8px rgba(58, 58, 58, 0.25)
+    & .img-block
+      & .btns-block
+        opacity: 1
+        visibility: visible
+  .product__top-btns
+    & > * + *
+      margin-top: 12px
+    .delete
+      color: $neutral-1
+      display: flex
+      align-items: center
+      font-size: 12px
+      line-height: 18px
+      text-decoration: none
+      transition: color 150ms ease-in-out
+      outline: none
+      &:before
+        content: ""
+        margin-right: 6px
+        width: 16px
+        height: 16px
+        display: inline-block
+        mask-size: 100%
+        mask-position: center
+        mask-repeat: no-repeat
+        //mask-image: url("")
+        background-color: $neutral-1
+        transition: background-color 150ms ease-in-out
+      &:hover
+        color: $primary-light
+        &:before
+          background-color: $primary-light
+    .delete
+      &:before
+        mask-image: url("../img/icons/delete.svg")
+    & .category
+      padding: 0 12px
+      display: inline-block
+      color: $mark-green
+      border: 1px solid $mark-green
+      border-radius: 12px
+      &:hover
+        color: $neutral-2
+        border-color: $neutral-2
+  & .img-block
+    margin-top: 12px
+    width: 100%
+    height: 192px
+    position: relative
+    text-align: center
+    & img
+      width: 100%
+      height: 100%
+      object-fit: contain
+    & .btns-block
+      padding: 6px 0
+      margin-top: 12px
+      width: 40px
+      position: absolute
+      top: 2px
+      right: -12px
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+      border-radius: 6px 0 0 6px
+      background-color: rgba(83,83,83, .9)
+      box-shadow: -1px 1px 5px rgba(163,163,163, 0.5)
+      opacity: 0
+      visibility: hidden
+      transition: all 150ms ease-in-out
+      & .btn + .btn
+        margin-top: 8px
+      & .btn
+        padding: 0
+        height: 36px
+        outline: none
+        &:before
+          padding: 0 !important
+          mask-size: 21px
+          background-color: #ffffff
+        &:hover
+          &:before
+            background-color: $primary-light
+  & .title
+    height: 48px
+    margin: 12px 0 0
+  & .price
+    margin: 12px 0 0
+    font-size: 16px
+    & span
+      margin-right: 8px
+      font-size: 20px
+      font-weight: 600
+      font-family: "Manrope", sans-serif
+  & > .btn
+    margin-top: 16px
+    padding: 6px 15px
+    width: 100%
+    border-radius: 8px
+    &:hover
+      color: #ffffff
+
+
+
+
+.slider-section
+  padding: 36px 36px 28px
+  background-color: #ffffff
+  box-sizing: border-box
+  & h2.title
+    margin-top: 0
+  & .product-slider
+    & .slider__item
+      & .product
+        width: 216px
+
+
+
+#brands
+  padding: 36px 36px 28px
+  background-color: #ffffff
+  box-sizing: border-box
+  & h2.title
+    margin-top: 0
+  & .product-slider
+    & .slider__item
+      & .content
+        height: 72px
+        width: 168px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $bg
+
+
+
+// Преимущества
+#advantages
+  margin-top: 42px
+  & .container
+    & .advantage-list
+      display: flex
+      flex-wrap: wrap
+      & .advantage__item + .advantage__item
+        margin-left: 32px
+      & .advantage__item
+        padding: 24px
+        width: 120px
+        height: 96px
+        color: $neutral-1
+        font-size: 16px
+        display: flex
+        align-items: center
+        flex-grow: 1
+        border: 1px solid $primary
+        border-radius: 12px
+        background-color: #ffffff
+        box-sizing: border-box
+        & img
+          margin-right: 12px
+          max-width: 48px
+        & span
+          max-width: 160px
+
+
+
+
+
+// Footer
+footer
+  background-color: $neutral-4
+  & .top
+    & .container
+      padding: 24px 0
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      & .widget
+        min-width: 20%
+        display: flex
+        flex-direction: column
+        & p + p
+          margin-top: 18px
+        & p
+          margin: 0
+          line-height: 24px
+        & .tel
+          color: $neutral-1
+          &:hover
+            color: $primary
+        & .btn-outline
+          padding: 2px 20px
+          color: $neutral-1
+          border-color: $neutral-1
+          &:hover
+            color: $primary
+            border-color: $primary
+        & ul
+          margin: 0
+          padding: 0
+          list-style: none
+          & li
+            color: $neutral-1
+            line-height: 32px
+            transition: color 150ms ease-in-out
+            &:hover
+              color: $primary-light
+            & a
+              color: $neutral-1
+              text-decoration: none
+              transition: color 150ms ease-in-out
+              &:hover
+                color: $primary-light
+        & .soc-links
+          & li
+            & .link
+              background-color: $neutral-2
+              &:hover
+                background-color: $primary-light
+  & .bottom
+    border-top: 1px solid rgba(133,133,133, 0.5)
+    & .container
+      padding: 16px 0
+      color: $neutral-2
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      & p
+        margin: 0
+      & a
+        color: $neutral-2
+        text-decoration: none
+        transition: color 150ms ease-in-out
+        &:hover
+          color: $primary-light
+
+
+
+
+// Группировка товаров
+#group-products
+  padding: 36px 36px 28px
+  border-radius: 12px
+  background-color: #ffffff
+  box-sizing: border-box
+  .title
+    margin: 0
+  .ras
+    margin-top: 24px
+    display: flex
+    column-gap: 24px
+    .filter
+      flex-grow: 1
+      color: $neutral-1
+      width: 168px
+      .widget + .widget
+        margin-top: 30px
+      .widget
+        & > p
+          margin: 0
+        & > *
+          margin-top: 12px
+        .title
+          margin-top: 0
+          width: 100%
+          position: relative
+          display: inline-flex
+          align-items: center
+          justify-content: space-between
+          font-weight: 600
+          font-family: "Manrope", sans-serif
+          &:after
+            content: ""
+            width: 10px
+            height: 5px
+            display: inline-block
+            background-size: 100%
+            background-position: center
+            background-image: url("../img/icons/select-arrow.svg")
+            background-repeat: no-repeat
+        .info-block
+          margin-top: 18px
+          ul
+            margin: 0
+            padding: 0
+            list-style: none
+            li + li
+              margin-top: 10px
+            li
+              .custom-checkbox
+                margin-right: 8px
+        &.active
+          .title
+            &:after
+              transform: rotateZ(180deg)
+        .status
+          margin-top: 12px
+          color: $primary
+          cursor: pointer
+          &:hover
+            color: $primary-light
+    .content-block
+      width: calc(100% - 192px)
+      padding: 0
+      margin: 0
+      .btns-group
+        padding-bottom: 12px
+        border-bottom: 1px solid $neutral-3
+      .selected-filters
+        margin-top: 24px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 12px
+        .selected-filter__item
+          padding: 4px 12px
+          color: $neutral-1
+          display: inline-block
+          border-radius: 6px
+          border: 1px solid $neutral-1
+          box-sizing: border-box
+          transition: all 150ms ease-in-out
+          cursor: default
+          .delete
+            width: 12px
+            height: 12px
+            margin-left: 12px
+            display: inline-block
+            background-color: $neutral-1
+            mask-size: 12px
+            mask-position: center
+            mask-repeat: no-repeat
+            mask-image: url("../img/icons/icon-menu-close.svg")
+            transition: background-color 150ms ease-in-out
+            cursor: pointer
+            &:hover
+              background-color: #D3555D
+          &:hover
+            color: $primary
+            border-color: $primary
+      .products-list
+        margin-top: 36px
+        display: flex
+        flex-wrap: wrap
+        gap: 24px
+        .product
+          width: 198px
+          & > *:first-child
+            margin-top: 0
+
+
+.section-header
+  display: flex
+  align-items: baseline
+  gap: 12px
+  h2
+    margin: 0
+    font-size: 24px
+    font-family: "Manrope", sans-serif
+    line-height: 36px
+
+
+// Избранные товары
+#favorite
+  margin: 0 auto
+  max-width: 1008px
+  padding: 36px 36px 28px
+  border-radius: 12px
+  background-color: #ffffff
+  box-sizing: border-box
+  .products-list
+    display: flex
+    flex-wrap: wrap
+    gap: 36px 24px
+    margin-top: 36px

@@ -1,0 +1,577 @@
+@import "colors.sass"
+
+a
+  color: $primary
+  text-decoration: none
+  transition: all 100ms ease-in-out
+  &:hover
+    color: $primary-light
+
+.center
+  text-align: center
+
+// Меню
+.menu
+  margin: 0
+  padding: 0
+  list-style: none
+  & .menu__item
+    display: inline-block
+    & a
+      text-decoration: none
+
+.tel
+  margin-right: 20px
+  color: $neutral-2
+  font-size: 18px
+  font-weight: 600
+  text-decoration: none
+  transition: color 100ms ease-in-out
+  &:hover
+    color: $primary
+
+
+
+
+// Кнопки
+.btn
+  padding: 0 24px
+  color: #ffffff
+  font-size: 16px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  border: 0
+  border-radius: 12px
+  text-decoration: none
+  cursor: pointer
+  transition: background 100ms ease-in-out
+  box-sizing: border-box
+  &.btn-size-big
+    padding: 12px 24px
+  &.btn-size-small
+    padding: 6px 24px
+  &:hover
+    background-image: $blueGradientHover
+
+
+.btn-outline
+  padding: 0 24px
+  display: inline-block
+  color: #5588D3
+  font-size: 16px
+  border-radius: 6px
+  border: 1px solid #5588D3
+  background-color: transparent
+  text-decoration: none
+  cursor: pointer
+  transition: color 100ms ease-in-out, border 100ms ease-in-out
+  box-sizing: border-box
+  &.btn-size-big
+    padding: 12px 24px
+  &.btn-size-small
+    padding: 6px 24px
+  &:hover
+    color: $neutral-1
+    border-color: $neutral-1
+
+.btn-icon-take,
+.btn-icon-add-to-cart,
+.btn-icon-forever,
+.btn-icon-compare,
+.btn--back,
+.icon-mark,
+.icon-tel,
+.file
+  &:before
+    content: ""
+    margin-right: 12px
+    width: 16px
+    height: 16px
+    display: inline-block
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    mask-size: 100%
+    mask-position: center
+    mask-repeat: no-repeat
+    transition: background 100ms ease-in-out
+.btn-icon-take
+  &:before
+    background-image: url("../img/icons/cart-white.svg")
+.btn-icon-add-to-cart
+  &:before
+    background-image: url("../img/icons/cart-check-white.svg")
+.btn-icon-forever,
+.btn-icon-compare
+  padding: 0 4px !important
+  width: 24px
+  height: 24px
+  box-sizing: content-box
+  &:before
+    margin-right: 0
+    width: 100%
+    height: 100%
+    mask-image: url("../img/icons/compare.svg")
+    mask-size: 24px 24px
+    mask-position: center
+    mask-repeat: no-repeat
+    background-color: $neutral-2
+  &:hover
+    background-image: none
+    &:before
+      background-color: $primary-light
+.btn-icon-forever
+  &:before
+    mask-image: url("../img/icons/heart.svg")
+.btn-icon-compare
+  &:before
+    mask-image: url("../img/icons/compare.svg")
+.btn-icon
+  display: inline-block
+  text-decoration: none
+  &:before
+    mask-size: 100%
+    mask-position: center
+    mask-repeat: no-repeat
+  &.size-24
+    &:before
+      margin-right: 12px
+      width: 24px
+      height: 24px
+
+
+.btn--back
+  padding: 0
+  color: $primary
+  &:before
+    margin: 0 16px 0 6px
+    width: 6px
+    height: 12px
+    display: inline-block
+    mask-image: url("../img/icons/back.svg")
+    background-color: $primary
+    transition: background-color 100ms ease-in-out
+  &:hover
+    color: $neutral-2
+    background-image: none
+    &:before
+      background-color: $neutral-2
+
+
+.icon-tel
+  &:before
+    width: 24px
+    height: 24px
+    mask-position: center
+    mask-image: url("../img/icons/icon-tel.svg")
+    background-color: $neutral-1
+
+
+
+
+
+.callback-btn
+  display: inline-flex
+  align-items: center
+  &:before
+    content: ""
+    margin-right: 13px
+    height: 16px
+    width: 16px
+    display: inline-block
+    mask-size: 100%
+    mask-position: center
+    mask-repeat: no-repeat
+    mask-image: url("../img/icons/calling.svg")
+    background-color: $primary
+    transition: background-color 100ms ease-in-out
+  &:hover
+    &:before
+      background-color: $neutral-1
+
+
+
+.btn-primary
+  background-image: $blueGradient
+  &:hover
+    background-image: $blueGradientHover
+.btn-secondary
+  background-image: $orangeGradient
+  &:hover
+    background-image: $orangeGradient
+
+
+// Form Controls
+textarea,
+input[type="text"],
+input[type="email"]
+  padding: 12px 16px
+  width: 100%
+  color: $neutral-1
+  display: block
+  font-size: 16px
+  border: 1px solid $neutral-4
+  border-radius: 12px
+  outline: none
+  transition: all 100ms ease-in-out
+  box-sizing: border-box
+  &:focus
+    border: 1px solid $primary
+    box-shadow: 0px 0px 4px rgba(148, 139, 233, 0.5)
+  &::placeholder
+    color: $neutral-3
+  &.error
+    border-color: $mark-red
+textarea
+  resize: vertical
+  &::-webkit-scrollbar-button
+    background-repeat: no-repeat
+    width: 8px
+    height: 12px
+
+
+
+// Соц сети
+.soc-links
+  margin: 0
+  padding: 0
+  list-style: none
+  display: inline-flex
+  & li + li
+    margin-left: 12px
+  & li
+    display: inline-flex
+    & .link
+      width: 24px
+      height: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      border-radius: 50%
+      background-color: $primary
+      mask-repeat: no-repeat
+      transition: background-color 150ms ease-in-out !important
+      &:hover
+        background-color: $primary-light
+      &.soc-link-whatsapp
+        mask-image: url("../img/icons/soc-whatsapp.svg")
+      &.soc-link-telegram
+        mask-image: url("../img/icons/soc-telegram.svg")
+      &.soc-link-instagram
+        mask-image: url("../img/icons/soc-instagram.svg")
+
+
+
+
+.checkbox
+  display: inline-flex
+  flex-wrap: wrap
+  align-items: center
+  & .default-checkbox
+    display: none
+    &:checked + .custom-checkbox
+      border-color: $primary-light
+      background-color: $primary-light
+      &:before
+        opacity: 1
+    &:disabled + .custom-checkbox
+      border-color: $neutral-4
+      background-color: $neutral-4
+  & .custom-checkbox
+    margin-right: 6px
+    width: 16px
+    height: 16px
+    //transform: translateY(3px)
+    border: 1px solid $neutral-4
+    border-radius: 2px
+    background-color: #ffffff
+    box-sizing: border-box
+    transition: all 100ms ease-in-out
+    cursor: pointer
+    &:hover
+      border-color: $primary-light
+    &:before
+      content: ""
+      width: 100%
+      height: 100%
+      display: block
+      background-size: 12px
+      background-position: center
+      background-repeat: no-repeat
+      background-image: url("../img/icons/check.svg")
+      opacity: 0
+      transition: opacity 100ms ease-in-out
+
+
+
+.radio
+  display: inline-flex
+  flex-wrap: wrap
+  align-items: center
+  & .default-radio
+    display: none
+    &:checked + .custom-radio
+      border-color: $primary-light
+      &:before
+        opacity: 1
+    &:disabled + .custom-radio
+      border-color: $neutral-4
+      background-color: red
+  & .custom-radio
+    margin-right: 6px
+    width: 16px
+    height: 16px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border: 1px solid $neutral-4
+    border-radius: 50%
+    background-color: #ffffff
+    box-sizing: border-box
+    transition: all 100ms ease-in-out
+    cursor: pointer
+    &:hover
+      border-color: $primary-light
+    &:before
+      content: ""
+      width: 8px
+      height: 8px
+      display: block
+      border-radius: 50%
+      background-color: $primary-light
+      transition: opacity 100ms ease-in-out
+      opacity: 0
+
+
+.select
+  padding: 10px
+  width: 100%
+  border-radius: 6px
+  border: 1px solid $neutral-3
+  box-sizing: border-box
+  outline: none
+
+
+
+//Swiper Slider
+.swiper-container
+  .swiper-button-prev,
+  .swiper-button-next
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    background-color: $primary-extralight
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    transition: background-color 100ms ease-in-out
+    &:after
+      content: ""
+      height: 14px
+      width: 7px
+      mask-size: 7px 14px
+      mask-position: center
+      mask-repeat: no-repeat
+      mask-image: url("../img/icons/back.svg")
+      transform: rotate(0deg) translateX(-1px)
+      background-color: $primary
+      transition: background-color 100ms ease-in-out
+    &:hover
+      background-color: $primary-light
+      &:after
+        background-color: #ffffff
+  .swiper-button-next
+    right: 18px
+    &:after
+      transform: rotate(180deg) translateX(-1px)
+  .swiper-button-prev
+    left: 18px
+  .swiper-button-disabled
+    opacity: 0 !important
+  .swiper-pagination
+    bottom: 0 !important
+    font-size: 0
+    line-height: 0
+    height: auto
+    .swiper-pagination-bullet
+      margin: 0px 6px !important
+      width: 6px
+      height: 6px
+      border-radius: 6px
+      background-color: $neutral-3
+      transition: all 150ms linear
+      opacity: 1
+      &.swiper-pagination-bullet-active
+        width: 36px
+        background-color: $primary
+
+
+
+
+
+
+// Pagination
+.pagination-box
+  margin: 48px auto 24px
+.pagination
+  width: 100%
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+  justify-content: center
+  .pagination__item + .pagination__item
+    margin-left: 8px
+  .pagination__item
+    width: 32px
+    height: 32px
+    border: 1px solid $neutral-4
+    border-radius: 4px
+    transition: all 100ms ease-in-out
+    box-sizing: border-box
+    a
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      color: $neutral-1
+      font-weight: 400
+      &.arrow
+        &:before
+          content: ""
+          height: 12px
+          width: 7px
+          display: block
+          background-color: $neutral-1
+          mask-position: center
+          mask-repeat: no-repeat
+          mask-size: 100%
+          mask-image: url("../img/icons/pagination-arrow.svg")
+          transition: background-color 100ms ease-in-out
+        &.arrow-prev
+          transform: rotate(-180deg)
+    &.active
+      border-color: $primary
+      a
+        color: $primary
+        font-weight: 600
+        cursor: default
+    &.disabled
+      a
+        cursor: default
+        &:before
+          background-color: $neutral-4
+    &:hover:not(.disabled)
+      border-color: $primary
+      a
+        color: $primary
+      &:first-child,
+      &:last-child
+        a:before
+          background-color: $primary
+
+
+
+
+
+
+// Список
+ul.custom-list
+  padding-left: 32px
+  list-style-image: url("../img/icons/list-disc.svg")
+  li
+    padding-left: 5px
+
+
+
+
+// Breadcrum
+.breadcrumb
+  margin: -24px 0 36px
+  padding: 0
+  list-style: none
+  .breadcrumb__item
+    display: inline-block
+    &:after
+      content: "/"
+      margin: 0 1.5px 0 6px
+      color: $neutral-1
+      font-size: 16px
+    &:last-child
+      &:after
+        content: ""
+    &.active
+      color: $neutral-2
+      pointer-events: none
+      cursor: default
+    a
+      color: $neutral-1
+      &:hover
+        color: $primary
+
+
+#back-page
+  margin: -24px 0 36px
+.back-page
+  &:before
+    content: ""
+    margin: 0 12px 0 0
+    height: 12px
+    width: 6px
+    display: inline-block
+    mask-size: 100%
+    mask-position: center
+    mask-repeat: no-repeat
+    mask-image: url("../img/icons/back.svg")
+    background-color: $primary
+    transition: background-color 100ms ease-in-out
+  &:hover
+    &:before
+      background-color: $primary-light
+
+
+
+
+.btn-link
+  display: inline-flex
+  align-items: center
+  &:before
+    content: ""
+    margin-right: 8px
+    width: 16px
+    height: 16px
+    display: inline-block
+    mask-size: 100%
+    mask-repeat: no-repeat
+    mask-position: center
+    background-color: $primary
+    transition: background-color 100ms ease-in-out
+  &:hover
+    color: $primary-light-2
+    &:before
+      background-color: $primary-light-2
+.btn-icon-add-to-favorite
+  &:before
+    mask-image: url("../img/icons/heart.svg")
+.btn-icon-add-to-compare
+  &:before
+    mask-image: url("../img/icons/compare.svg")
+.btn-icon-delivery
+  &:before
+    mask-size: 16px 12px
+    mask-image: url("../img/icons/delivery.svg")
+    background-color: $neutral-1
+.btn-icon-selfcall
+  &:before
+    mask-size: 14.67px 16px
+    mask-image: url("../img/icons/selfcall.svg")
+    background-color: $neutral-1
+.btn-icon-squared-add
+  &:before
+    mask-image: url("../img/icons/add.svg")
+.btn-icon-delete
+  &:before
+    mask-size: 13px 15px
+    mask-image: url("../img/icons/trash.svg")
