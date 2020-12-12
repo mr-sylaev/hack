@@ -248,6 +248,7 @@ a:hover {
 
 textarea,
 input[type=text],
+input[type=password],
 input[type=email] {
   padding: 12px 16px;
   width: 100%;
@@ -262,17 +263,20 @@ input[type=email] {
 }
 textarea:focus,
 input[type=text]:focus,
+input[type=password]:focus,
 input[type=email]:focus {
   border: 1px solid #4772B2;
   box-shadow: 0px 0px 4px rgba(148, 139, 233, 0.5);
 }
 textarea::placeholder,
 input[type=text]::placeholder,
+input[type=password]::placeholder,
 input[type=email]::placeholder {
   color: #CACACA;
 }
 textarea.error,
 input[type=text].error,
+input[type=password].error,
 input[type=email].error {
   border-color: #FF5A5A;
 }

@@ -731,3 +731,337 @@ footer
     flex-wrap: wrap
     gap: 36px 24px
     margin-top: 36px
+
+
+
+
+
+.recovery-password
+  h2
+    margin-top: 0
+    margin-bottom: 24px
+  & .tt-ras
+    margin: 0 auto
+    padding: 36px 96px
+    width: 280px
+    color: $neutral-1
+    border-radius: 12px
+    background-color: #ffffff
+    & p
+      margin: 0
+    & a
+      color: $primary
+      &:hover
+        color: $neutral-2
+    & > *
+      margin-top: 24px !important
+    & .btn--back
+      margin-top: 0 !important
+    & .btns-group
+      margin-top: 36px !important
+      display: flex
+      justify-content: space-between
+      align-items: center
+    & form
+      width: 100%
+      & .form-control
+        margin-top: 24px
+        & label
+          //margin-bottom: 6px
+          display: inline-block
+        & input
+          width: 100%
+          height: 36px
+          border-radius: 8px
+        & .btn
+          width: auto
+          border-radius: 12px
+      & .forgot-password
+        margin-top: 8px
+        display: inline-block
+
+
+
+
+.tabs
+  & .tabs__caption
+    margin: 0
+    padding: 0
+    list-style: none
+    display: inline-flex
+    flex-wrap: wrap
+    box-shadow: inset 0 -1px 0 0 #CACACA
+    & li
+      padding: 6px 24px
+      letter-spacing: 0.5px
+      color: $neutral-2
+      cursor: pointer
+      transition: all 100ms ease-in-out
+      &.active
+        color: $neutral-1
+        text-shadow: 0 0 1px $neutral-1
+        box-shadow: inset 0 -4px 0 0 $primary-light
+  & .tabs__content
+    display: none
+    &.active
+      display: block
+    & .reg-result
+      & p
+        margin: 0
+      & > *
+        margin-top: 24px !important
+
+
+
+
+#product
+  padding: 36px 36px 28px
+  border-radius: 12px
+  background-color: #ffffff
+  box-sizing: border-box
+  & > .title
+    margin: 0
+  & > .lowdown-top
+    margin-top: 6px
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+    gap: 22px 24px
+    .articule
+      color: $neutral-2
+      font-size: 12px
+      line-height: 18px
+    .status
+      color: $mark-green
+      font-weight: 600
+    .category-block
+      width: 100%
+      .category
+        padding: 0 12px
+        display: inline-block
+        color: $mark-green
+        border: 1px solid $mark-green
+        border-radius: 12px
+        &:hover
+          color: $neutral-2
+          border-color: $neutral-2
+  .ras
+    margin-top: 24px
+    display: flex
+    justify-content: space-between
+    gap: 24px
+    .swiper-container
+      flex-grow: 111
+      max-width: 552px
+      width: 100%
+      max-height: 552px
+      border: 1px solid $neutral-4
+      box-sizing: border-box
+      .swiper-wrapper
+      .swiper-slide
+        padding: 0
+        box-sizing: border-box
+        .content
+          width: 100%
+          height: 100%
+          img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: contain
+            object-position: center
+            transform: translateY(0)
+            border-radius: 12px
+      .swiper-pagination
+    .info-block
+      width: 50%
+      height: 100%
+      color: $neutral-2
+      .radio
+        color: $neutral-1
+      .radio + .radio
+        margin-left: 12px
+      & > *
+        margin-top: 36px
+        & > *
+          margin-top: 12px
+        &:first-child
+          margin: 0
+      .title
+        margin: 36px 0 0
+        color: $baseFont
+        font-size: 18px
+        font-weight: 700
+        font-family: "Manrope", sans-serif
+        &:first-child
+          margin: 0
+        .additional-info
+          margin-left: 12px
+          font-size: 16px
+          font-weight: normal
+          font-family: "Open Sans", sans-serif
+          line-height: 24px
+          color: $secondary
+      & > .description
+        color: $baseFont
+      p
+        margin: 12px 0 0
+      ul
+        margin: 12px 0 0
+        padding: 0
+        max-width: 516px
+        width: 100%
+        li + li
+          margin: 12px 0 0
+        li
+          width: 100%
+          display: inline-flex
+          align-items: flex-end
+          .key
+            margin-right: 12px
+            color: $neutral-2
+          .value
+            color: $baseFont
+      .toras
+        padding: 16px 14px
+        display: flex
+        border: 1px solid $neutral-4
+        border-radius: 12px
+        box-sizing: border-box
+        .toras__item
+          text-align: center
+          p
+            margin: 0
+          .top
+            .life
+              color: $baseFont
+              font-size: 16px
+              font-weight: 600
+              font-family: "Manrope", sans-serif
+              line-height: 24px
+            .total-price
+              color: $neutral-1
+              font-size: 12px
+              line-height: 18px
+          .bottom
+            margin-top: 12%
+            .price
+              color: $primary
+              font-size: 20px
+              font-weight: 600
+              font-family: "Manrope", sans-serif
+              line-height: 24px
+    .btns-group
+      color: $neutral-1
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      gap: 12px 24px
+      & > *
+        margin-top: 0
+      .description
+        margin: 0
+        color: $neutral-2
+        font-size: 12px
+        line-height: 18px
+    .btn-link-in-text
+      display: inline-flex
+      align-items: center
+      .btn-link
+        padding-right: 4px
+        &:before
+          background-color: $neutral-1
+        &:hover
+          &:before
+            background-color: $neutral-2
+    .btn
+      padding: 6px 12px
+      height: 36px
+//.btn-link
+//  display: inline-flex
+//  align-items: center
+//  &:before
+//    content: ""
+//    margin-right: 8px
+//    width: 16px
+//    height: 16px
+//    display: inline-block
+//    mask-size: 100%
+//    mask-repeat: no-repeat
+//    mask-position: center
+//    background-color: $primary
+//    transition: background-color 100ms ease-in-out
+//  &:hover
+//    color: $primary-light-2
+//    &:before
+//      background-color: $primary-light-2
+//.btn-icon-add-to-favorite
+//  &:before
+//    mask-image: url("../img/icons/heart.svg")
+//.btn-icon-add-to-compare
+//  &:before
+//    mask-image: url("../img/icons/compare.svg")
+//.btn-icon-delivery
+//  &:before
+//    mask-size: 16px 12px
+//    mask-image: url("../img/icons/delivery.svg")
+//    background-color: $neutral-1
+//.btn-icon-selfcall
+//  &:before
+//    mask-size: 14.67px 16px
+//    mask-image: url("../img/icons/selfcall.svg")
+//    background-color: $neutral-1
+//.btn-icon-squared-add
+//  &:before
+//    mask-image: url("../img/icons/add.svg")
+
+#product-details
+  padding: 36px 36px 28px
+  border-radius: 12px
+  background-color: #ffffff
+  box-sizing: border-box
+  .tabs__caption
+    width: 100%
+  .tabs__content
+    color: $neutral-1
+    margin-top: 36px
+    & > *
+      margin-top: 12px
+    & > .title,
+    & > div > .title
+      margin: 36px 0 0
+      color: $baseFont
+      font-size: 18px
+      font-weight: 700
+      font-family: "Manrope", sans-serif
+    p
+      margin: 12px 0 0
+      color: $baseFont
+    ul
+      margin: 12px 0 0
+      padding: 0
+      max-width: 516px
+      width: 100%
+      li + li
+        margin: 12px 0 0
+      li
+        width: 100%
+        display: inline-flex
+        align-items: flex-end
+        .key
+          color: $neutral-1
+        .value
+          color: $baseFont
+        .dot-line
+          margin: 0 12px 6px
+          flex-grow: 1
+          height: 1px
+          display: inline-block
+          background-image: url("../img/icons/dotted-line.svg")
+          background-repeat: repeat-x
+    .product-slider
+      margin-top: 24px !important
+      .slider__item
+        .product
+          width: 200px
+

@@ -88,250 +88,68 @@
   </header>
   <main>
     <div class="container">
-      <section>
-        <div class="swiper-container main-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide slider__item">
-              <div class="content">
-                <div class="info-block">
-                  <p class="title">ИГРОВАЯ ПРИСТАВКА SONY PLAYSTATION 5</p>
-                  <p class="description">Консоль PS5™ открывает новые игровые возможности, о которых вы даже не могли мечтать.</p>
-                  <p class="price"><span>46 999 ₽</span></p>
-                  <button class="btn btn-size-big btn-primary">Узнать подробнее</button>
+      <section class="recovery-password">
+        <h2 class="center">Вход / Регистрация</h2>
+        <section class="tt-ras">
+          <div class="tabs">
+            <ul class="tabs__caption">
+              <li class="active">Вход</li>
+              <li>Регистрация</li>
+            </ul>
+            <div class="tabs__content active">
+              <form action="" method="POST">
+                <div class="form-control">
+                  <label>Ваш email</label>
+                  <input type="email" placeholder="example@mail.ru" required>
                 </div>
-                <img src="img/ps5.png" alt="">
-              </div>
+                <div class="form-control">
+                  <label>Ваш пароль</label>
+                  <input type="password" placeholder="Введите пароль" requirede>
+                </div>
+                <a class="forgot-password" href="#" >Забыли пароль?</a>
+                <div class="form-control btns-group">
+                  <input class="btn btn-size-small btn-primary" type="submit" value="Войти">
+                  <div class="checkbox">
+                    <input class="default-checkbox" id="ch2" type="checkbox" checked required>
+                    <label class="custom-checkbox" for="ch2"></label>
+                    Запомнить меня
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="swiper-slide slider__item">
-              <div class="content">
-                <div class="info-block">
-                  <p class="title">НАУШНИКИ APPLE AIRPODS MAX</p>
-                  <p class="description">Высочайшее качество звука в полной гармонии с волшебной простотой AirPods. Это звук в блестящем исполнении.</p>
-                  <p class="price"><span>62 990 ₽</span></p>
-                  <button class="btn btn-size-big btn-primary">Узнать подробнее</button>
+            <div class="tabs__content">
+              <form action="" method="POST">
+                <div class="form-control">
+                  <label>Ваш email</label>
+                  <input type="email" placeholder="example@mail.ru" required>
                 </div>
-                <img src="img/apple-max.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide slider__item">
-              <div class="content">
-                <div class="info-block">
-                  <p class="title">КВАДРОКОПТЕР DJI MAVIC 2 PRO</p>
-                  <p class="description">Полностью обновленная модель знаменитой серии складных дронов Mavic.</p>
-                  <p class="price"><span>141 990 ₽</span></p>
-                  <button class="btn btn-size-big btn-primary">Узнать подробнее</button>
+                <div class="form-control">
+                  <label>Ваш пароль</label>
+                  <input type="password" placeholder="Введите пароль" required>
                 </div>
-                <img src="img/hele.jpg" alt="">
-              </div>
+                <div class="form-control">
+                  <label>Повтор пароля</label>
+                  <input type="password" placeholder="Введите пароль" required>
+                </div>
+                <div class="form-control">
+                  <div class="checkbox">
+                    <input class="default-checkbox" id="ch3" type="checkbox" checked required>
+                    <label class="custom-checkbox" for="ch3"></label>
+                    Я согласен (-а) на обработку <a href="#">пернсональных данных</a>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <input class="btn btn-size-small btn-primary" type="submit" value="Зарегистрироваться">
+                </div>
+                <div class="reg-result" style="display: none">
+                  <p>Поздравляем, вы успешно зарегистрировались на сайте.</p>
+                  <p>Так же на почту <b>example@mail.ru</b> было направлено приветственное письмо.</p>
+                  <button class="btn-outline btn-size-small">Перейти на главную</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-      <section id="advantages">
-        <div class="container">
-          <div class="advantage-list">
-            <div class="advantage__item">
-              <img src="img/icons/tasks.svg" alt="">
-              <span>Техника под различные задачи</span>
-            </div>
-            <div class="advantage__item">
-              <img src="img/icons/payment.svg" alt="">
-              <span>Оплата картой</span>
-            </div>
-            <div class="advantage__item">
-              <img src="img/icons/delivery.svg" alt="">
-              <span>Доставка на следующий день</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slider-section">
-        <h2 class="title">Новые товары</h2>
-        <div class="swiper-container--complects swiper-container product-slider">
-          <div class="swiper-wrapper slider__item">
-            <div class="swiper-slide content product">
-              <div class="product__top-btns">
-                <a class="category" href="#">Для работы с видео</a>
-              </div>
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="product__top-btns">
-                <a class="category" href="#">Для работы с видео</a>
-              </div>
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="product__top-btns">
-                <a class="category" href="#">Для работы с видео</a>
-              </div>
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="product__top-btns">
-                <a class="category" href="#">Для работы с видео</a>
-              </div>
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="product__top-btns">
-                <a class="category" href="#">Для работы с видео</a>
-              </div>
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-          </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <section class="slider-section">
-        <h2 class="title">Популярные товары</h2>
-        <div class="swiper-container--top-products swiper-container product-slider">
-          <div class="swiper-wrapper slider__item">
-            <div class="swiper-slide content product">
-              <!--                <div class="product__top-btns">-->
-              <!--                  <a class="delete" href="#">Удалить</a>-->
-              <!--                </div>-->
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-            <div class="swiper-slide content product">
-              <div class="img-block">
-                <img src="img/product.png" alt="">
-                <div class="btns-block">
-                  <a class="btn btn-icon-forever" href="#"></a>
-                  <a class="btn btn-icon-compare" href="#"></a>
-                </div>
-              </div>
-              <p class="title">Macbook Pro 13”</p>
-              <p class="price"><span>4 500 ₽</span></p>
-              <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
-            </div>
-          </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <section id="brands">
-        <h2 class="title">Бренды</h2>
-        <div class="swiper-container--brands swiper-container product-slider">
-          <div class="swiper-wrapper slider__item">
-            <div class="swiper-slide content">
-              <img src="img/apple.png" alt="">
-            </div>
-            <div class="swiper-slide content">
-              <img src="img/asus.png" alt="">
-            </div>
-            <div class="swiper-slide content">
-              <img src="img/lenovo.png" alt="">
-            </div>
-
-            <div class="swiper-slide content">
-              <img src="img/hp.png" alt="">
-            </div>
-            <div class="swiper-slide content">
-              <img src="img/ps.png" alt="">
-            </div>
-            <div class="swiper-slide content">
-              <img src="img/dell.png" alt="">
-            </div>
-          </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+        </section>
       </section>
     </div>
   </main>
