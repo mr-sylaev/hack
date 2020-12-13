@@ -353,6 +353,7 @@ textarea::-webkit-scrollbar-button {
 .checkbox .custom-checkbox {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -368,13 +369,17 @@ textarea::-webkit-scrollbar-button {
 }
 .checkbox .custom-checkbox:before {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-size: 12px;
   background-size: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/icons/check.svg");
-  opacity: 0;
+  opacity: 1;
   transition: opacity 150ms ease-in-out;
 }
 

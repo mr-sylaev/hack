@@ -701,14 +701,17 @@ footer .bottom .container a:hover {
   padding-bottom: 1px;
   margin-top: 20px;
   width: 100%;
+  color: #4772B2;
   border-bottom: 1px solid transparent;
   transition: all 150ms ease-in-out;
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
+  cursor: pointer;
 }
 #group-products .ras .filter .widget .clear-filters:hover {
+  color: #4772B2;
   border-color: #4772B2;
 }
 #group-products .ras .filter .widget .title {
