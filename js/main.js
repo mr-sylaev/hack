@@ -1,19 +1,3 @@
-$subscriptionModal = $('.subscription-modal');
-
-
-// Функция для скрытия мод. окна "Подпишитесь"
-$subscriptionModal.find('.close').on('click', function (){
-  $(this).parent().slideUp();
-});
-
-
-// Функция для отображения мод. окна "Подпишитесь" через указанное время
-setTimeout(function () {
-  $subscriptionModal.slideDown();
-}, 2000)
-
-
-
 $modal = $('.modal');
 $closeModal = $('.modal .close');
 $openCallbackModalBtn = $('.open--callback-modal');
@@ -40,17 +24,17 @@ $searchResultsBlock = $('.search--results');
 
 
 $searchInput.on('focus', function (){
-  $searchResultsBlock.slideDown();
+  $searchResultsBlock.slideDown(200);
 });
 
 $searchInput.on('focusout', function (){
-  $searchResultsBlock.slideUp();
+  $searchResultsBlock.slideUp(200);
 });
 
 
 
 
-//tabs
+// tabs
 (function($) {
   $(function() {
     $("ul.tabs__caption").on("click", "li:not(.active)", function() {
@@ -66,3 +50,110 @@ $searchInput.on('focusout', function (){
     });
   });
 })(jQuery);
+
+
+
+
+
+// Все характеристики кнопка
+$openAllSpecifications =  $('#open-all-specifications');
+$openAllSpecifications.on("click", function() {
+  $('.tabs__caption li')
+    .removeClass("active")
+    .eq(1)
+    .addClass("active");
+  $('div.tabs__content')
+    .removeClass("active")
+    .eq(1)
+    .addClass("active");
+});
+
+
+
+
+$widgetLeftSudebarTitle = $('.widget .title');
+
+$widgetLeftSudebarTitle.on('click', function () {
+  if ( $(this).parent().hasClass('active') ) {
+    $(this).parent().removeClass('active');
+    $(this).next().slideUp();
+  }
+  else {
+    $(this).parent().addClass('active');
+    $(this).next().slideDown();
+  }
+});
+
+
+$btnHideShowElementsForFilters = $('#btn-hide-show-elements-for-filters');
+
+
+$btnHideShowElementsForFilters.on('click', function () {
+  if( $(this).hasClass('show') ) {
+    $(this).parent().find('ul li').slideDown();
+    $(this).removeClass('show');
+    $(this).addClass('hide');
+    $(this).text('Свернуть');
+  }
+  else{
+    $(this).parent().find('ul li').slideUp();
+    $(this).removeClass('hide');
+    $(this).addClass('show');
+    $(this).text('Посмотреть все');
+    $(this).parent().find('ul li:nth-child(1)').slideDown()
+    $(this).parent().find('ul li:nth-child(2)').slideDown()
+    $(this).parent().find('ul li:nth-child(3)').slideDown()
+    $(this).parent().find('ul li:nth-child(4)').slideDown()
+  }
+});
+
+
+
+
+
+
+$activeFilters = $('.active-filters');
+$checkboxChecked = $('.checkbox .default-checkbox');
+
+
+
+for (let i=0;i<=$checkboxChecked; i++){
+  console.log($checkboxChecked);
+}
+
+$ras = [];
+$checkboxChecked.on('click', function (){
+
+  if( $(this).prop("checked")) {
+    $ras.push($(this).parent()[0].innerText);
+
+    console.log($ras)
+
+  }
+  else{
+    delete $ras[$ras.indexOf($(this).parent()[0].innerText)];
+    console.log($ras)
+  }
+})
+
+
+
+
+// Отпрака запроса на Бэк
+$activeFilters.on('click', function () {
+  $.get(
+    "/group-products.html",
+    {
+      minPrice: document.querySelector('#price-min-input').value,
+      maxPrice: document.querySelector('#price-max-input').value,
+      brands: $ras
+    },
+    onAjaxSuccess
+  );
+
+  function onAjaxSuccess(data)
+  {
+    // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+    alert(data);
+  }
+})

@@ -100,84 +100,80 @@
           </div>
           <div class="ras">
             <aside class="filter">
-              <div class="widget active">
-                <div class="title">Бренды</div>
-                <div class="info-block">
-                  <ul>
-                    <li>
-                      <div class="checkbox">
-                        <input class="default-checkbox" id="ch1" type="checkbox" checked>
-                        <label class="custom-checkbox" for="ch1"></label>
-                        Apple
-                      </div>
-                    </li>
-                    <li>
-                      <div class="checkbox">
-                        <input class="default-checkbox" id="ch1" type="checkbox">
-                        <label class="custom-checkbox" for="ch1"></label>
-                        Asus
-                      </div>
-                    </li>
-                    <li>
-                      <div class="checkbox">
-                        <input class="default-checkbox" id="ch1" type="checkbox">
-                        <label class="custom-checkbox" for="ch1"></label>
-                        Dell
-                      </div>
-                    </li>
-                    <li>
-                      <div class="checkbox">
-                        <input class="default-checkbox" id="ch1" type="checkbox">
-                        <label class="custom-checkbox" for="ch1"></label>
-                        HP
-                      </div>
-                    </li>
-                  </ul>
+              <form action="#">
+                <div class="widget active">
+                  <div class="title">Бренды</div>
+                  <div class="info-block">
+                    <ul>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands1" type="checkbox" checked>
+                          <label class="custom-checkbox" for="brands1"></label>
+                          Apple
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands2" type="checkbox">
+                          <label class="custom-checkbox" for="brands2"></label>
+                          Asus
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands3" type="checkbox">
+                          <label class="custom-checkbox" for="brands3"></label>
+                          Dell
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands4" type="checkbox">
+                          <label class="custom-checkbox" for="brands4"></label>
+                          HP
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands5" type="checkbox">
+                          <label class="custom-checkbox" for="brands5"></label>
+                          Huawei
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands6" type="checkbox">
+                          <label class="custom-checkbox" for="brands6"></label>
+                          Xiaomi
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <input class="default-checkbox" id="brands7" type="checkbox">
+                          <label class="custom-checkbox" for="brands7"></label>
+                          Honor
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <p id="btn-hide-show-elements-for-filters" class="status show">Посмотреть все</p>
                 </div>
-                <p class="status">Посмотреть все</p>
-              </div>
-              <div class="widget">
-                <div class="title">Тип процессора</div>
-                <div class="info-block">
-                  <ul>
-                    <li>
-                    </li>
-                  </ul>
+                <div class="widget">
+                  <div class="title">Укажите Min и Max цены</div>
+                  <div class="info-block">
+                    <div class="price-filter">
+                      <input id="price-min-input" class="price-input" name="min-price" type="text" placeholder="Минимальная цена" min="0">
+                      <input id="price-max-input" class="price-input" name="max-price" type="text" placeholder="Максимальная цена" max="99999">
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="widget active">
-                <div class="title">Сенсорный экран</div>
-                <div class="info-block">
-                  <ul>
-                    <li>
-                      <div class="radio">
-                        <input class="default-radio" id="r1" type="radio" name="filter-sensor-display" checked>
-                        <label class="custom-radio" for="r1"></label>
-                        Да
-                      </div>
-                    </li>
-                    <li>
-                      <div class="radio">
-                        <input class="default-radio" id="r2" type="radio" name="filter-sensor-display">
-                        <label class="custom-radio" for="r2"></label>
-                        Нет
-                      </div>
-                    </li>
-                  </ul>
+                <div class="widget active" style="text-align: center">
+                  <input class="btn btn-primary active-filters" type="submit" value="Применить фильтры">
+                  <input class="clear-filters" type="reset" value="Сбросить фильтры">
                 </div>
-              </div>
+              </form>
             </aside>
             <main class="content-block">
-              <div class="btns-group">
-                <select name="" id="">
-                  <option value="">Сначала популярные</option>
-                </select>
-              </div>
-              <div class="selected-filters">
-                <div class="selected-filter__item">Бренд: Apple<span class="delete"></span></div>
-                <div class="selected-filter__item">Диагональ экрана: 13”<span class="delete"></span></div>
-                <a href="#">Сбросить фильтры</a>
-              </div>
               <div class="products-list">
                 <div class="product">
                   <div class="img-block">
@@ -358,6 +354,30 @@
       </div>
     </footer>
   </div>
+  <div id="callback-modal" class="modal">
+    <div class="content modal-content">
+      <span class="close" title="Закрыть"></span>
+      <p class="title">Обратный звонок</p>
+      <form action="" method="POST">
+        <div class="form-control">
+          <label>Номер телефона</label>
+          <input type="text" placeholder="+7 (999) 999-99-99" required>
+        </div>
+        <div class="form-control">
+          <div class="checkbox">
+            <input class="default-checkbox" id="ch1" type="checkbox" checked required>
+            <label class="custom-checkbox" for="ch1"></label>
+            Я согласен (-а) на обработку <a href="#">пернсональных данных</a>
+          </div>
+        </div>
+        <div class="form-control">
+          <input class="btn btn-primary" type="submit" value="Заказать звонок">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
 
   <!-- jQuery -->
   <script src="js/jquery_v3.5.1.min.js"></script>

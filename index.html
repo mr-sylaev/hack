@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/ui-kit.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/media.css">
   <!-- Swiper Slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -23,7 +24,7 @@
             <li class="menu__item"><a href="#">Контакты</a></li>
           </ul>
           <div class="info-block">
-            <a class="tel" href="tel+79779073757">+7 (999) 999 99 99</a>
+            <a class="tel" href="tel+79999999999">+7 (999) 999 99 99</a>
             <button class="btn-outline callback-btn open--callback-modal">Обратный звонок</button>
             <ul class="soc-links">
               <li><a class="link soc-link-whatsapp" href="#" target="_blank" title="Whatsapp"></a></li>
@@ -151,9 +152,6 @@
           <div class="swiper-container--complects swiper-container product-slider">
             <div class="swiper-wrapper slider__item">
               <div class="swiper-slide content product">
-                <div class="product__top-btns">
-                  <a class="category" href="#">Для работы с видео</a>
-                </div>
                 <div class="img-block">
                   <img src="img/product.png" alt="">
                   <div class="btns-block">
@@ -166,9 +164,6 @@
                 <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
               </div>
               <div class="swiper-slide content product">
-                <div class="product__top-btns">
-                  <a class="category" href="#">Для работы с видео</a>
-                </div>
                 <div class="img-block">
                   <img src="img/product.png" alt="">
                   <div class="btns-block">
@@ -181,9 +176,6 @@
                 <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
               </div>
               <div class="swiper-slide content product">
-                <div class="product__top-btns">
-                  <a class="category" href="#">Для работы с видео</a>
-                </div>
                 <div class="img-block">
                   <img src="img/product.png" alt="">
                   <div class="btns-block">
@@ -196,9 +188,6 @@
                 <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
               </div>
               <div class="swiper-slide content product">
-                <div class="product__top-btns">
-                  <a class="category" href="#">Для работы с видео</a>
-                </div>
                 <div class="img-block">
                   <img src="img/product.png" alt="">
                   <div class="btns-block">
@@ -211,9 +200,6 @@
                 <a class="btn btn-icon-take btn-primary" href="#">В корзину</a>
               </div>
               <div class="swiper-slide content product">
-                <div class="product__top-btns">
-                  <a class="category" href="#">Для работы с видео</a>
-                </div>
                 <div class="img-block">
                   <img src="img/product.png" alt="">
                   <div class="btns-block">
@@ -345,7 +331,7 @@
               </a>
             </p>
             <p>
-              <a class="tel" href="tel:+79779073757">+7 999 999 99 99</a>
+              <a class="tel" href="tel:+79999999999">+7 999 999 99 99</a>
               <br>
               <button class="btn-outline open--callback-modal" style="margin-top: 12px;">Обратный звонок</button>
             </p>
@@ -388,6 +374,28 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div id="callback-modal" class="modal">
+    <div class="content modal-content">
+      <span class="close" title="Закрыть"></span>
+      <p class="title">Обратный звонок</p>
+      <form action="" method="POST">
+        <div class="form-control">
+          <label>Номер телефона</label>
+          <input type="text" placeholder="+7 (999) 999-99-99" required>
+        </div>
+        <div class="form-control">
+          <div class="checkbox">
+            <input class="default-checkbox" id="ch1" type="checkbox" checked required>
+            <label class="custom-checkbox" for="ch1"></label>
+            Я согласен (-а) на обработку <a href="#">пернсональных данных</a>
+          </div>
+        </div>
+        <div class="form-control">
+          <input class="btn btn-primary" type="submit" value="Заказать звонок">
+        </div>
+      </form>
+    </div>
   </div>
 
   <!-- jQuery -->
